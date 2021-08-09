@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #e6e6e6;">
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Benchmark Test</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://Contact.davis86t.repl.co" rel="links">
+	<style>
+		body {
+			position: relative;
+			height: 900px;
+			width: 1440px;
+			background: #222222;
+			font-family: "Poppins", sans-seriff;
+
+		}
+
+		.logo {
+			width: 350px;
+			height: 73px;
+			position: absolute;
+			left: 98px;
+			top: 52px;
+		}
+
+		.talkie {
+			width: 51px;
+			height: 106px;
+			position: absolute;
+			left: 268px;
+			top: 215px;
+			z-index: 2;
+		}
+
+		.rabbit {
+			width: 103.01px;
+			height: 62px;
+			position: absolute;
+			left: 668px;
+			top: 244px;
+			z-index: 2;
+		}
+
+		.shield {
+			width: 98px;
+			height: 98px;
+			position: absolute;
+			left: 1097px;
+			top: 226px;
+			z-index: 2;
+		}
+
+		.headertext {
+			position: absolute;
+			top: 340px;
+			left: 154px;
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 10px;
+		}
+
+		a.one {
+			text-decoration: none;
+			color: #DEBF79;
+			position: absolute;
+			width: 73px;
+			height: 27px;
+			left: 1274px;
+			top: 71px;
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 27px;
+		}
+
+		a.one:hover {
+			color: lightgray;
+		}
+
+		.links {
+			display: inline-block;
+		}
+
+		#rectangle1 {
+			Position: absolute;
+			top: 189px;
+			left: 94px;
+			width: 400px;
+			height: 400px;
+			background: white;
+			border-radius: 3px;
+			z-index: 1;
+		}
+
+		#rectangle2 {
+			Position: absolute;
+			top: 189px;
+			left: 520px;
+			width: 400px;
+			height: 400px;
+			background: white;
+			border-radius: 3px;
+			z-index: 1;
+		}
+
+		#rectangle3 {
+			Position: absolute;
+			top: 189px;
+			left: 946px;
+			width: 400px;
+			height: 400px;
+			background: white;
+			border-radius: 3px;
+			z-index: 1;
+		}
+
+		#text1 {
+			position: absolute;
+			top: 409px;
+			left: 154px;
+			font-size: 14px;
+			text-align: justify;
+			color: #858585;
+			width: 289px;
+			z-index: 2;
+		}
+
+		#text2 {
+			position: absolute;
+			top: 409px;
+			left: 580px;
+			font-size: 14px;
+			text-align: justify;
+			color: #858585;
+			width: 289px;
+			z-index: 2;
+			size: 14px;
+		}
+
+		#text3 {
+			position: absolute;
+			top: 409px;
+			left: 1006px;
+			font-size: 14px;
+			text-align: justify;
+			color: #858585;
+			width: 289px;
+			z-index: 2;
+		}
+
+		#heading1 {
+			position: absolute;
+			top: 340px;
+			left: 154px;
+			width: 240px;
+			z-index: 2;
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		#heading2 {
+			position: absolute;
+			top: 340px;
+			left: 580px;
+			width: 240px;
+			z-index: 2;
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		#heading3 {
+			position: absolute;
+			top: 340px;
+			left: 1006px;
+			width: 240px;
+			z-index: 2;
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		#rectangle4 {
+			Position: absolute;
+			top: 505px;
+			left: 229px;
+			width: 130px;
+			height: 45px;
+			background: #DEBF79;
+			z-index: 2;
+		}
+
+		#rectangle5 {
+			Position: absolute;
+			top: 505px;
+			left: 655px;
+			width: 130px;
+			height: 45px;
+			background: #DEBF79;
+			z-index: 2;
+		}
+
+		#rectangle6 {
+			Position: absolute;
+			top: 505px;
+			left: 1081px;
+			width: 130px;
+			height: 45px;
+			background: #DEBF79;
+			z-index: 2;
+		}
+
+		#learnmore1 {
+			position: absolute;
+			width: 78px;
+			height: 21px;
+			left: 255px;
+			top: 517px;
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 21px;
+			color: #ffffff;
+			z-index: 3;
+		}
+
+		#learnmore2 {
+			position: absolute;
+			width: 78px;
+			height: 21px;
+			left: 681px;
+			top: 517px;
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 21px;
+			color: #ffffff;
+			z-index: 3;
+		}
+
+		#learnmore3 {
+			position: absolute;
+			width: 78px;
+			height: 21px;
+			left: 1107px;
+			top: 517px;
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 21px;
+			color: #ffffff;
+			z-index: 3;
+		}
+
+		#heading4 {
+			position: absolute;
+			width: 319px;
+			height: 72px;
+			left: 98px;
+			top: 649px;
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 48px;
+			line-height: 72px;
+			color: #ffffff
+		}
+
+		hr {
+			position: absolute;
+			width: 211px;
+			height: 0px;
+			left: 98px;
+			top: 725px;
+			border: 4px solid #DEBF79;
+		}
+
+		p {
+			position: absolute;
+			width: 1248px;
+			height: 67px;
+			left: 98px;
+			top: 751px;
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 30px;
+			color: #ffffff
+		}
+
+		a.two {
+			color: #debf79;
+			text-decoration: none;
+		}
+
+		a.two:hover {
+			color: lightgray;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="script.js">
+
+	</script>
+	<div>
+		<img src="Logo.png" class="logo">
+      <img src="Talkie.png" class="talkie">
+      <img src="Rabbit.png" class="rabbit">
+      <img src="Shield.png" class="shield">
+      <div id="rectangle1"></div>
+      <div id="rectangle2"></div>
+      <div id="rectangle3"></div>  
+      <div id="text1">Integer accumsan molestie nisl, id faucibus urna accumsan quis. Proin vulputate, mauris semper maximus. </div>  
+      <div id="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div> 
+      <div id="text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div> 
+      <div id="heading1">Heading Two </div>
+      <div id="heading2">Heading Two </div>
+      <div id="heading3">Heading Two </div>
+      <div id="rectangle4"></div>
+      <div id="rectangle5"></div>
+      <div id="rectangle6"></div>
+      <div id="learnmore1">Learn More </div>
+      <div id="learnmore2">Learn More </div>
+      <div id="learnmore3">Learn More </div>
+      <div id="heading4">Heading One </div>
+      <hr>
+      <p>Remove the duplicates in 2 Javascript objects and output the list of distinct names in an unordered list when 
+      <a class="two" onclick="removeDuplicates()">this link</a> is clicked. If the operation has been completed already notify the user that this has already been done.
+      </p>
+      <div class="links">
+        <ul>
+          <a class="one" href="https://Contact.davis86t.repl.co">
+            <li>contact</li>
+          </a>
+        </ul>
+      </div>
+      
+    </div>
+  </body>
+</html>
